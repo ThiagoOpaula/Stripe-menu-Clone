@@ -1,8 +1,10 @@
-import  GlobalStyle  from '../styles/GlobalStyle';
+import React from 'react';
+
+import GlobalStyle from '../styles/GlobalStyle';
 import Layout from '../components/Layout/index';
 import Navbar from '../components/Navbar/index';
 
-export default function MyApp({ Component, pageProps }) {
+const MyApp: React.FC = ({ Component, pageProps }) => {
   return (
     <>
       <Layout>
@@ -11,5 +13,7 @@ export default function MyApp({ Component, pageProps }) {
       <GlobalStyle />
       <Component {...pageProps} />
     </>
-  )
-}
+  );
+};
+
+export default MyApp;

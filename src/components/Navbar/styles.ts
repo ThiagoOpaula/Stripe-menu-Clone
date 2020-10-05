@@ -21,7 +21,8 @@ export const DropDownStyles = styled.div`
 
     transition: opacity 0.2s;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       opacity: 0.55;
     }
   }
